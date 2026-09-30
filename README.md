@@ -2,8 +2,6 @@
 
 Official repository for **BRIDGE-AD: Bipolar Relation-Instructed Diffusion Generation of Anomalous and Normal Examples for Anomaly Detection**.
 
-Ziqi Liu, Hai Ci, Yuxi Li, Xiaobo Chen, and Juntong Xi
-
 ## Overview
 
 BRIDGE-AD generates both anomalous images and normal images with varied appearances for industrial anomaly detection. Instructions based on normal component relations specify where to edit and whether to violate or preserve those relations. Separate diffusion control branches learn the two editing objectives, while structural correction helps maintain the intended local structure and preserve surrounding content.
