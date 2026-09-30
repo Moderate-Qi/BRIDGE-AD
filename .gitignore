@@ -216,3 +216,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local research assets and generated outputs are not part of this release.
+data/
+datasets/
+checkpoints/
+weights/
+results/
+outputs/
+runs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+.env
+.env.*
