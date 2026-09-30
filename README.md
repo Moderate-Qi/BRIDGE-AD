@@ -24,6 +24,18 @@ Download the three benchmarks from their original providers and cite their corre
 
 See [dataset references](DATASETS.md) for the full citations. Dataset images are not redistributed in this repository. Their original licenses apply independently of this repository's code license.
 
+## Environment
+
+[environment.yml](environment.yml) provides the third-party dependencies for training and generation, based on the recorded Python 3.10.11 and PyTorch 2.5.1 / CUDA 12.1 environment. Use Linux or Windows with a compatible NVIDIA driver.
+
+```bash
+conda env create -f environment.yml
+conda activate bridge-ad
+python -m pip check
+```
+
+`huggingface-hub==0.25.2` is additionally pinned for compatibility with Diffusers 0.21.1.
+
 ## Training Workflow
 
 The launcher follows the training order used by the implementation:
@@ -47,10 +59,10 @@ Neither command imports a model, downloads assets, or starts training.
 
 ### Launch Training With the Internal Dependencies
 
-The following commands require the internal `bridge_ad` package, its environment, and a complete training plan. **Those dependencies and the plan are scheduled for the post-acceptance release.**
+The following commands require the environment above, the internal `bridge_ad` package, and a complete training plan. **The internal package and training plan are scheduled for the post-acceptance release.**
 
 1. Obtain the datasets from the links above and prepare the training/support manifests.
-2. Install the training environment and the `bridge_ad` implementation.
+2. Create the environment above and install the `bridge_ad` implementation when released.
 3. Set the dataset, pretrained backbone, manifest, checkpoint, and output paths in the training plan.
 4. Inspect the resolved stage commands, then launch training:
 
