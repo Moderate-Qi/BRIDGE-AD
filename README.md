@@ -59,7 +59,6 @@ python train.py --config /path/to/training_plan.json --dry-run
 python train.py --config /path/to/training_plan.json
 ```
 
-The plan supplies argument lists for `texture`, `base_hp`, `base_hn`, and the paired entries in `bipolar_rounds`. Each bipolar round refers to fixed parent checkpoints; completing its HP job must not change the parent used by its HN job. Hyperparameters and asset preparation are provided by the internal configuration, not inferred by this launcher.
 ## License
 
 The code currently included in this repository is released under the [MIT License](LICENSE). External datasets, pretrained models, and third-party components remain subject to their respective licenses; they are not redistributed here.
