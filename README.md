@@ -34,8 +34,6 @@ The launcher follows the training order used by the implementation:
 
 HP denotes anomalous examples; HN denotes normal examples with varied appearances. The normal-appearance branch and diffusion backbone are frozen during the subsequent polarity-branch training.
 
-`train.py` launches the internal training stages in this order and stops if a stage fails. `training_step.py` exposes a base-objective update: sample a diffusion timestep and noise, obtain the conditioned noise prediction, compute the loss, and update the active control branch. The model construction, condition encoding, loss definitions, bipolar objectives, and generation logic remain in the unreleased internal modules.
-
 ### Inspect the Public Entry Point
 
 Python 3.10 or newer is sufficient for these two inspection commands:
