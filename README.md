@@ -12,8 +12,6 @@ This is a **partial release of the training workflow**. It includes the main tra
 
 **The majority of the remaining code, including the core module implementations and their internal training dependencies, will be released upon acceptance of the paper.**
 
-The internal `bridge_ad` package, complete training configurations, and trained checkpoints are not included yet. The current repository is therefore not a standalone runnable training package. The public files call the actual internal training interfaces; they do not contain substitute implementations of BERI, PMCD, or RCAP.
-
 ## Datasets
 
 Download the three benchmarks from their original providers and cite their corresponding publications:
